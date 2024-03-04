@@ -9,7 +9,7 @@ A python-based command-line package to augment primer and probe design for Recom
 [setup file](setup.md)
 ### Installation
 
-Scott Edits: [here](Szor54.md)
+
 GitHub Installation
 
 ```
