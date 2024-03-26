@@ -18,7 +18,7 @@ Install the following extensions in VSCode to enhance your development experienc
   You can install this extension directly from the VSCode Extensions view (`Ctrl+Shift+X`) by searching for "Remote - Containers" and clicking Install.
 
 ## Step 2: Create a Dockerfile
-Create a folder somewhere on your computer where you want to store all of the files for this program. Inside of that folder is called the "root directory", this is the root of the program. Below is an example, an indent indicates that it is a subfolder within the directory. 
+Create a folder somewhere on your computer where you want to store all of the files for this program. Inside of that folder is called the "root directory", this is the root of the program. Below is an example, an indent indicates that it is a subfolder within the directory. The "#" indicates a comment, explaining what each line does.
 - /project-root-directory  # This is the root directory of your project
   - Dockerfile             # Dockerfile resides in the root directory
   - .devcontainer          # A folder for VS Code's development container configuration
