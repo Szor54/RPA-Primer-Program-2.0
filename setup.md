@@ -85,7 +85,7 @@ Create a directory named `.devcontainer` in your project's root. See the example
 }
 ```
 
-This configuration file tells VSCode how to build and run the container defined in your Dockerfile, including extensions to install and ports to forward.
+Copy and paste the contents above into `devcontainer.json`. This configuration file tells VSCode how to build and run the container defined in your Dockerfile, including extensions to install and ports to forward.
 
 ## Step 4: Using the Development Container
 
