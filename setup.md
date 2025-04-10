@@ -48,6 +48,7 @@ RUN apt-get update && apt-get install -y \
     python3 \
     python3-pip \
     && rm -rf /var/lib/apt/lists/*
+
 # Install pip packages globally
 RUN pip3 install --no-cache-dir --break-system-packages \
     pandas \
@@ -76,13 +77,17 @@ Create a directory named `.devcontainer` in your project's root. See the example
         "context": "..",
         "dockerfile": "Dockerfile"
     },
-    "settings": { 
-        "terminal.integrated.shell.linux": "/bin/bash"
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-vscode.cpptools"
+            ],
+            "settings": { 
+                "terminal.integrated.shell.linux": "/bin/bash"
+            }
+        }
     },
-    "extensions": [
-        "ms-python.python",
-        "ms-vscode.cpptools"
-    ],
     "forwardPorts": [
         5000
     ],
