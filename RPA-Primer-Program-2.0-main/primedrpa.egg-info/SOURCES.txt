@@ -1,0 +1,8 @@
+LICENSE
+PrimedRPA
+README.md
+setup.py
+primedrpa.egg-info/PKG-INFO
+primedrpa.egg-info/SOURCES.txt
+primedrpa.egg-info/dependency_links.txt
+primedrpa.egg-info/top_level.txt

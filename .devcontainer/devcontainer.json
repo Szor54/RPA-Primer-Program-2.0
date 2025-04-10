@@ -1,0 +1,23 @@
+{
+    "name": "ATRX_RPA_Design_2",
+    "build": {
+        "context": "..",
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-vscode.cpptools"
+            ],
+            "settings": { 
+                "terminal.integrated.shell.linux": "/bin/bash"
+            }
+        }
+    },
+    "forwardPorts": [
+        5000
+    ],
+    "postCreateCommand": "echo 'Container Ready!'",
+    "remoteUser": "root"
+}
