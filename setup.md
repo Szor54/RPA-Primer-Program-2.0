@@ -20,9 +20,10 @@ Install the following extensions in VSCode to enhance your development experienc
 ## Step 2: Create a Dockerfile
 Create a folder somewhere on your computer where you want to store all of the files for this program. Inside of that folder is called the "root directory", this is the root of the program. Below is an example, an indent indicates that it is a subfolder within the directory. The "#" indicates a comment, explaining what each line does.
 - /project-root-directory  # This is the root directory of your project
-  - Dockerfile             # Dockerfile resides in the root directory
+  
   - .devcontainer          # A folder for VS Code's development container configuration
     - devcontainer.json    # Configuration file for the development container
+    - Dockerfile             # Dockerfile resides in the root directory
   - src                    # Example folder for your source code
     - app.py               # An example Python application file
   - README.md              # A README file for your project
@@ -47,7 +48,12 @@ RUN apt-get update && apt-get install -y \
     python3 \
     python3-pip \
     && rm -rf /var/lib/apt/lists/*
+# Install pip packages globally
+RUN pip3 install --no-cache-dir --break-system-packages \
+    pandas \
+    numpy
 
+    
 # Set the working directory
 WORKDIR /usr/src/app
 
