@@ -10,6 +10,7 @@ Before beginning, ensure the following are installed:
 
 - **[Docker](https://docs.docker.com/get-docker/)** – Required to run the environment in a container.
 - **[Visual Studio Code](https://code.visualstudio.com/Download)** – Your main IDE.
+- **[Git](https://git-scm.com/downloads)** - To clone the repo
 - **Remote - Containers Extension for VSCode**
   - Install this from the Extensions panel or run `Ctrl+Shift+P` → “Extensions: Install Extensions” → Search: `Remote - Containers`.
 
@@ -20,14 +21,24 @@ Before beginning, ensure the following are installed:
 Create the following folder structure inside your project, should be made after git clone and the steps above:
 
 ```
-/[RPA Project Name]
+/RPA-Primer-Program-2.0
 │
 ├── .devcontainer/
 │   ├── devcontainer.json
 │   └── Dockerfile
-├── GCF_000896435.1_ViralProj76727_genomic.fna
-├── PrimedRPA_Parameters.txt
-└── (your script files will go here)
+│
+├── RPA-Primer-Program-2.0-main/
+│   ├── LICENSE
+│   ├── meta.yaml
+│   ├── PrimedRPA_Parameters.txt
+│   ├── PrimedRPA.py
+│   ├── PrimedRPA.yml
+│   └── (other files...)
+│
+├── .gitignore
+├── README.md
+└── setup.md
+
 ```
 
 ---
@@ -48,19 +59,14 @@ VSCode will now build the container and open a terminal inside it.
 ## Running the Primer Design Script
 
 After ensuring the parameters are corrrect
-cd into the `RPA-Primer-Program-2.0-main` directory using:
+cd into the `RPA-Primer-Program-2.0-main` directory and run the program using:
 
 ```bash
 cd RPA-Primer-Program-2.0-main
-```
-
-Run the program:
-
-```bash
 python3 PrimedRPA.py PrimedRPA_Parameters.txt
 ```
 
-Make sure you use `python3`, **not just `python`**, to ensure the correct interpreter is used.
+Make sure you use `python3`, **not just `python`**, to ensure the correct interpreter is used (if in the container, if on windows use `python`).
 
 ---
 
@@ -78,7 +84,7 @@ These files contain your alignment summary, valid primer/probe candidates, and f
 
 ## Summary
 
-This README guided you through:
+This setup guided you through:
 
 1. Installing **Docker** and **VSCode**.
 2. Using **Remote Containers** to build an isolated development environment.
@@ -86,4 +92,7 @@ This README guided you through:
 4. Running the `PrimedRPA.py` script inside the container using `python3`.
 
 You now have a fully functional and reproducible setup to design RPA primers.
+
+
+By Scott Rose
 
