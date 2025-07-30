@@ -1,0 +1,21 @@
+# Ignore all CSVs
+*.csv
+
+# Ignore virtual environments
+.venv/
+venv/
+env/
+
+# Ignore Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore IDE/editor files
+.vscode/
+.idea/
+
+# Ignore system files
+.DS_Store
+Thumbs.db

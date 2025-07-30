@@ -18,6 +18,11 @@ RUN pip3 install --no-cache-dir --break-system-packages \
     pandas \
     numpy
 
+
+# Add aliases so Python extension can find Python
+RUN ln -s /usr/bin/python3 /usr/bin/python && \
+    ln -s /usr/bin/pip3 /usr/bin/pip
+
     
 # Set the working directory
 WORKDIR /usr/src/app

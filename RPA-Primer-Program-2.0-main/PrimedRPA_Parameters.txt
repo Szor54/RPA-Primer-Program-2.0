@@ -6,7 +6,7 @@ Important Note - Do not remove any of the “>” and write your input directly 
 
 
 Please define the reference name for this PrimedRPA run:
->Installation_Validation_Run
+>HPV_Run_1
 
 Please indicate if you would like to use a previously generated Alignment File: [NO or File path]
 >NO
@@ -15,14 +15,14 @@ Please indicate if you would like to use the previously generated Binding Sites:
 >NO
 
 Please enter the path, from your current working directory, to the input fasta file:
->Validation/Validation_1_Input.fasta
+>GCF_000896435.1_ViralProj76727_genomic.fna
 
 Please classify the contents of the input fasta file as one of the following options: [SS, MS, AMS]. Whereby:
  SS = Single sequence
  MS = Multiple unaligned sequences
  MAS = Multiple aligned sequences
 
->MS
+>SS
 
 If multiple sequences are present in the input fasta file (Classification of MS or MAS), please indicate below the
 percentage identity required for the primers and probes target binding sites:
@@ -32,7 +32,7 @@ Please indicate if a primer identity anchor is required. [NO or length of anchor
 >NO
 
 Desired primer length (This can be a range: 28-32 or fixed value: 32):
->28-32
+>32
 
 Please state if you require a probe to be designed and if so what type [NO,EXO,NFO]
 >NO
@@ -48,16 +48,16 @@ Below please state the repeat nucleotide cut-off in bp (e.g. 5bp will exclude se
 >5
 
 Below please insert the minimum percentage GC content for primer/probe:
->40
+>30
 
 Below please insert the maximum percentage GC content for primer/probe:
->60
+>70
 
 Below please indicate the percentage match tolerance for primer-probe dimerisation and secondary structure formation:
->60
+>80
 
 Please enter [No or Path to Background file] below to identify if you want to perform a background DNA binding check:
->Validation/Validation_1_Background.fasta
+>NO
 
 Below please insert the percentage background cross reactivity threshold:
 >65
@@ -69,7 +69,7 @@ Please define the maximum number of sets you would like to identify:
 >5
 
 Please define the number of threads available:
->1
+>2
 
 Blastn Cross Reactivity Search Settings [Basic or Advanced or Fast]
 >Fast

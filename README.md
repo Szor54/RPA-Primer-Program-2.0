@@ -6,7 +6,7 @@ https://anaconda.org/bioconda/primedrpa/badges/latest_release_date.svg)](https:/
 A python-based command-line package to augment primer and probe design for Recombinase Polymerase Amplification (RPA).
 
 # Setup Environment
-Scott's changes [setup file](setup.md)
+GO SEE THE SETUP FILE FIRST FOR SCOTT CHANGES HERE [setup file](setup.md)
 ### Installation
 
 
